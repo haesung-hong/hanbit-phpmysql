@@ -15,10 +15,9 @@ try {
   header('location: jokes.php');
 }
 catch (PDOException $e) {
-  $title = 'An error has occurred';
+    $title = '오류가 발생했습니다.';
 
-  $output = 'Unable to connect to the database server: ' . $e->getMessage() . ' in ' .
-  $e->getFile() . ':' . $e->getLine();
+    $output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .$e->getFile() . ':' . $e->getLine();
 }
 
 include  __DIR__ . '/../templates/layout.html.php';

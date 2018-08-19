@@ -1,5 +1,5 @@
 <form action="" method="post">
-    <label for="joketext">Type your joke here:</label>
+    <label for="joketext">유머글을 입력해주세요:</label>
     <textarea id="joketext" name="joketext" rows="3" cols="40"></textarea>
-    <input type="submit" value="Add">
+    <input type="submit" value="저장">
 </form>

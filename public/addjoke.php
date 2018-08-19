@@ -16,17 +16,15 @@ if (isset($_POST['joketext'])) {
 
       header('location: jokes.php');
       
-  }
-  catch (PDOException $e) {
-    $title = 'An error has occurred';
+  } catch (PDOException $e) {
+      $title = '오류가 발생했습니다.';
 
-    $output = 'DAtabase error: ' . $e->getMessage() . ' in ' .
-    $e->getFile() . ':' . $e->getLine();
+      $output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .$e->getFile() . ':' . $e->getLine();
   }
 
 }
 else {
-  $title = 'Add a new joke';
+  $title = '유머글 올리기';
 
   ob_start();
 
