@@ -16,7 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `author`
+-- `author` 테이블 구조
 --
 
 DROP TABLE IF EXISTS `author`;
@@ -31,7 +31,7 @@ CREATE TABLE `author` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `author`
+-- `author` 테이블 데이터 덤핑
 --
 
 LOCK TABLES `author` WRITE;
@@ -41,7 +41,7 @@ INSERT INTO `author` VALUES (1,'Kevin Yank','thatguy@kevinyank.com'),(2,'Tom But
 UNLOCK TABLES;
 
 --
--- Table structure for table `joke`
+-- `joke` 테이블 구조
 --
 
 DROP TABLE IF EXISTS `joke`;
@@ -57,7 +57,7 @@ CREATE TABLE `joke` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `joke`
+-- `joke` 테이블 데이터 덤핑
 --
 
 LOCK TABLES `joke` WRITE;
