@@ -27,7 +27,7 @@ class JokeController {
 		}
 
 
-		$title = 'Joke list';
+		$title = '유머글 목록';
 
 		$totalJokes = $this->jokesTable->total();
 
@@ -41,7 +41,7 @@ class JokeController {
 	}
 
 	public function home() {
-		$title = 'Internet Joke Database';
+		$title = '인터넷 유머 데이터베이스';
 
 		return ['template' => 'home.html.php', 'title' => $title];
 	}
@@ -49,7 +49,7 @@ class JokeController {
 	public function delete() {
 		$this->jokesTable->delete($_POST['id']);
 
-		header('location: /joke/list'); 
+		header('location: /joke/list');
 	}
 
 
@@ -71,7 +71,7 @@ class JokeController {
 				$joke = $this->jokesTable->findById($_GET['id']);
 			}
 
-			$title = 'Edit joke';
+			$title = '유머글 수정';
 
 			return ['template' => 'editjoke.html.php',
 					'title' => $title,
