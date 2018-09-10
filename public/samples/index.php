@@ -108,7 +108,7 @@ if (!isset($branchName)) {
 
 	<h1>PHP Novice to Ninja sample code</h1>
 
-	<p>Click on a file to view in your browser</p>
+	<p>파일명을 클릭하면 실행 결과를 브라우저에서 볼 수 있습니다.</p>
 
 	<ul class="files">
 	<?php
