@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Internet Joke Database';
+$title = '인터넷 유머 세상';
 
 ob_start();
 
