@@ -1,5 +1,5 @@
 <?php
-namespace Ninja;
+namespace Hanbit;
 
 class Markdown {
 	private $string;
