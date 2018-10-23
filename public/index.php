@@ -14,7 +14,7 @@ try {
 
 }
 catch (PDOException $e) {
-  $output = 'Unable to connect to the database server: ' . $e->getMessage() . ' in ' .
+  $output = '데이터베이스 서버에 접속할 수 없습니다: ' . $e->getMessage() . ', 위치: ' .
   $e->getFile() . ':' . $e->getLine();
 }
 
