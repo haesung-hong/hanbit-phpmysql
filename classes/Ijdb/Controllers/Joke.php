@@ -1,7 +1,7 @@
 <?php
 namespace Ijdb\Controllers;
-use \Ninja\DatabaseTable;
-use \Ninja\Authentication;
+use \Hanbit\DatabaseTable;
+use \Hanbit\Authentication;
 
 class Joke {
 	private $authorsTable;
@@ -31,7 +31,7 @@ class Joke {
 		}
 
 
-		$title = 'Joke list';
+		$title = '유머글 목록';
 
 		$totalJokes = $this->jokesTable->total();
 
@@ -51,7 +51,7 @@ class Joke {
 	}
 
 	public function home() {
-		$title = 'Internet Joke Database';
+		$title = '인터넷 유머 세상';
 
 		return ['template' => 'home.html.php', 'title' => $title];
 	}
