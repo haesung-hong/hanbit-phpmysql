@@ -1,7 +1,7 @@
 <?php
 namespace Ijdb;
 
-class IjdbRoutes implements \Ninja\Routes {
+class IjdbRoutes implements \Hanbit\Routes {
 	private $authorsTable;
 	private $jokesTable;
 	private $categoriesTable;
@@ -11,11 +11,11 @@ class IjdbRoutes implements \Ninja\Routes {
 	public function __construct() {
 		include __DIR__ . '/../../includes/DatabaseConnection.php';
 
-		$this->jokesTable = new \Ninja\DatabaseTable($pdo, 'joke', 'id', '\Ijdb\Entity\Joke', [&$this->authorsTable, &$this->jokeCategoriesTable]);
- 		$this->authorsTable = new \Ninja\DatabaseTable($pdo, 'author', 'id', '\Ijdb\Entity\Author', [&$this->jokesTable]);
- 		$this->categoriesTable = new \Ninja\DatabaseTable($pdo, 'category', 'id', '\Ijdb\Entity\Category', [&$this->jokesTable, &$this->jokeCategoriesTable]);
- 		$this->jokeCategoriesTable = new \Ninja\DatabaseTable($pdo, 'joke_category', 'categoryId');
-		$this->authentication = new \Ninja\Authentication($this->authorsTable, 'email', 'password');
+		$this->jokesTable = new \Hanbit\DatabaseTable($pdo, 'joke', 'id', '\Ijdb\Entity\Joke', [&$this->authorsTable, &$this->jokeCategoriesTable]);
+ 		$this->authorsTable = new \Hanbit\DatabaseTable($pdo, 'author', 'id', '\Ijdb\Entity\Author', [&$this->jokesTable]);
+ 		$this->categoriesTable = new \Hanbit\DatabaseTable($pdo, 'category', 'id', '\Ijdb\Entity\Category', [&$this->jokesTable, &$this->jokeCategoriesTable]);
+ 		$this->jokeCategoriesTable = new \Hanbit\DatabaseTable($pdo, 'joke_category', 'categoryId');
+		$this->authentication = new \Hanbit\Authentication($this->authorsTable, 'email', 'password');
 	}
 
 	public function getRoutes(): array {
@@ -156,7 +156,7 @@ class IjdbRoutes implements \Ninja\Routes {
 		return $routes;
 	}
 
-	public function getAuthentication(): \Ninja\Authentication {
+	public function getAuthentication(): \Hanbit\Authentication {
 		return $this->authentication;
 	}
 
