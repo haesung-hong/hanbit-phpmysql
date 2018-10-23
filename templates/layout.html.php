@@ -8,11 +8,11 @@
   <body>
   <nav>
     <header>
-      <h1>Internet Joke Database</h1>
+      <h1>인터넷 유머 세상</h1>
     </header>
     <ul>
       <li><a href="index.php">Home</a></li>
-      <li><a href="jokes.php">Jokes List</a></li>
+      <li><a href="jokes.php">유머글 목록</a></li>
     </ul>
   </nav>
 
