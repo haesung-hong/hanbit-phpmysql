@@ -5,44 +5,44 @@ $roll2 = rand(1, 6);
 
 
 if ($roll1 == 1) {
-  $english = 'one';
+    $korean = '하나';
 }
 else if ($roll1 == 2) {
-  $english = 'two';
+    $korean = '둘';
 }
 else if ($roll1 == 3) {
-  $english = 'three';
+    $korean = '셋';
 }
 else if ($roll1 == 4) {
-  $english = 'four';
+    $korean = '넷';
 }
 else if ($roll1 == 5) {
-  $english = 'five';
+    $korean = '다섯';
 }
 else if ($roll1 == 6) {
-  $english = 'six';
+    $korean = '여섯';
 }
 
 if ($roll2 == 1) {
-  $englishRoll2 = 'one';
+    $koreanRoll2 = '하나';
 }
 else if ($roll2 == 2) {
-  $englishRoll2 = 'two';
+    $koreanRoll2 = '둘';
 }
 else if ($roll2 == 3) {
-  $englishRoll2 = 'three';
+    $koreanRoll2 = '셋';
 }
 else if ($roll2 == 4) {
-  $englishRoll2 = 'four';
+    $koreanRoll2 = '넷';
 }
 else if ($roll2 == 5) {
-  $englishRoll2 = 'five';
+    $koreanRoll2 = '다섯';
 }
 else if ($roll2 == 6) {
-  $englishRoll2 = 'six';
+    $koreanRoll2 = '여섯';
 }
 
 
-echo '<p>You rolled a ' . $english . ' and a ' . $englishRoll2 . '</p>';
+echo '<p>주사위를 굴려서 나온 숫자 : ' . $korean . ' 그리고 ' . $koreanRoll2 . '</p>';
 
 ?>
