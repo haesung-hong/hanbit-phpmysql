@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>List of jokes</title>
+    <title>유머글 목록</title>
   </head>
   <body>
   <?php if (isset($error)): ?>
