@@ -8,7 +8,7 @@
   <body>
   <nav>
     <header>
-      <h1>Internet Joke Database</h1>
+      <h1>인터넷 유머 세상</h1>
     </header>
     <ul>
       <li><a href="/">Home</a></li>
