@@ -13,7 +13,7 @@
 
 <?php foreach($jokes as $joke): ?>
 <blockquote>
-  <?=(new \Ninja\Markdown($joke->joketext))->toHtml()?>
+  <?=(new \Hanbit\Markdown($joke->joketext))->toHtml()?>
 
     (by <a href="mailto:<?=htmlspecialchars($joke->getAuthor()->email, ENT_QUOTES,
                     'UTF-8'); ?>">

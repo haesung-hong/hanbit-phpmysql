@@ -1,6 +1,6 @@
 <?php
 namespace Ijdb\Controllers;
-use \Ninja\DatabaseTable;
+use \Hanbit\DatabaseTable;
 
 class Register {
 	private $authorsTable;
