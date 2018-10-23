@@ -24,7 +24,7 @@ try {
 	}
 
 
-	$title = 'Joke list';
+	$title = '유머글 목록';
 
 	$totalJokes = $jokesTable->total();
 
@@ -36,9 +36,9 @@ try {
 
 }
 catch (PDOException $e) {
-	$title = 'An error has occurred';
+	$title = '오류가 발생했습니다';
 
-	$output = 'Database error: ' . $e->getMessage() . ' in ' .
+	$output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .
 	$e->getFile() . ':' . $e->getLine();
 }
 
