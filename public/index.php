@@ -6,14 +6,14 @@ try {
 
 
   $sql = 'UPDATE `joke` SET `jokedate`="2012-04-01"
-      WHERE `joketext` LIKE "%programmer%"';
+      WHERE `joketext` LIKE "%프로그래머%"';
 
   $affectedRows = $pdo->exec($sql);
 
-  $output = 'Updated ' . $affectedRows .' rows.';
+  $output = '갱신된 row: ' . $affectedRows .' 개.';
 }
 catch (PDOException $e) {
-  $output = 'Database error: ' . $e->getMessage();
+  $output = '데이터베이스 오류: ' . $e->getMessage();
 }
 
     
