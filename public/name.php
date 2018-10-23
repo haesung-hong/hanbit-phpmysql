@@ -1,4 +1,4 @@
 <?php
 $name = $_GET['name'];
-echo 'Welcome to our website, ' . $name . '!';
+echo $name . '님, 홈페이지 방문을 환영합니다!';
 ?>
