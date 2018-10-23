@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Form Example</title>
+    <title>폼 예제</title>
   </head>
   <body>
     <p>

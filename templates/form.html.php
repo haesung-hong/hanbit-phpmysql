@@ -1,19 +1,19 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Enter your name</title>
+		<title>이름을 입력하세요</title>
 		<link rel="stylesheet" href="form.css" />
 		<meta charset="utf-8">	
 	</head>
 	<body>
-	<form action="" method="post">
-	  	<label for="firstname">First name:</label>
-	    <input type="text" name="firstname" id="firstname">
-	  	
-	  	<label for="lastname">Last name:</label>
-	    <input type="text" name="lastname" id="lastname">
+  <form action="" method="post">
+      <label for="firstname">이름:</label>
+      <input type="text" name="firstname" id="firstname">
 
-	 	<input type="submit" value="GO">
-	</form>
+      <label for="lastname">성:</label>
+      <input type="text" name="lastname" id="lastname">
+
+      <input type="submit" value="제출">
+  </form>
 
 </body>

@@ -7,12 +7,12 @@ else {
   $lastName = $_POST['lastname'];
 
   if ($firstName == 'Kevin' && $lastName == 'Yank') {
-    $output = 'Welcome, oh glorious leader!';
+    $output = '환영합니다, 관리자시군요!';
   }
   else {
-    $output = 'Welcome to our website, ' .
-        htmlspecialchars($firstName, ENT_QUOTES, 'UTF-8') . ' ' .
-        htmlspecialchars($lastName, ENT_QUOTES, 'UTF-8') . '!';
+    $output = htmlspecialchars($firstName, ENT_QUOTES, 'UTF-8') . ' ' .
+    htmlspecialchars($lastName, ENT_QUOTES, 'UTF-8')
+    . '님, 홈페이지 방문을 환영합니다!';
   }
 
   include '../templates/welcome.html.php';
