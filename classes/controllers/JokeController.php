@@ -27,7 +27,7 @@ class JokeController {
 		}
 
 
-		$title = 'Joke list';
+		$title = '유머글 목록';
 
 		$totalJokes = $this->jokesTable->total();
 
@@ -41,7 +41,7 @@ class JokeController {
 	}
 
 	public function home() {
-		$title = 'Internet Joke Database';
+		$title = '인터넷 유머 세상';
 
 		ob_start();
 
