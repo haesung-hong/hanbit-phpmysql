@@ -10,7 +10,7 @@ class Joke {
 	private $author;
 	private $jokeCategoriesTable;
 
-	public function __construct(\Ninja\DatabaseTable $authorsTable, \Ninja\DatabaseTable $jokeCategoriesTable) {
+	public function __construct(\Hanbit\DatabaseTable $authorsTable, \Hanbit\DatabaseTable $jokeCategoriesTable) {
 		$this->authorsTable = $authorsTable;
 		$this->jokeCategoriesTable = $jokeCategoriesTable;
 	}
