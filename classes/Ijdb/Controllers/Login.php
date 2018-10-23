@@ -4,7 +4,7 @@ namespace Ijdb\Controllers;
 class Login {
 	private $authentication;
 
-	public function __construct(\Ninja\Authentication $authentication) {
+	public function __construct(\Hanbit\Authentication $authentication) {
 		$this->authentication = $authentication;
 	}
 
