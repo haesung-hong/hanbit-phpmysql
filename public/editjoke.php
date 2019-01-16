@@ -16,7 +16,7 @@ try {
 
 		$joke = getJoke($pdo, $_GET['id']);
 
-		$title = 'Edit joke';
+		$title = '유머 글 수정';
 
 		ob_start();
 
