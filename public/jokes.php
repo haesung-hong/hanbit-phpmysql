@@ -12,7 +12,7 @@ try {
      $jokes[] = $row['joketext'];
   }
 
-  $title = '유머글 목록';
+  $title = '유머 글 목록';
 
   $output = '';
 
