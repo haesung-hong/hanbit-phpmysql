@@ -14,7 +14,7 @@ class Category {
 			$category = $this->categoriesTable->findById($_GET['id']);
 		}
 
-		$title = 'Edit Category';
+		$title = '카테고리 수정';
 
 		return ['template' => 'editcategory.html.php',
 				'title' => $title,
