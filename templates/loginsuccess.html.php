@@ -1,3 +1,3 @@
-<h2>Login Successful</h2>
+<h2>로그인 성공</h2>
 
-<p>You are now logged in.</p>
+<p>로그인되었습니다.</p>

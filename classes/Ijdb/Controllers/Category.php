@@ -14,7 +14,7 @@ class Category {
 			$category = $this->categoriesTable->findById($_GET['id']);
 		}
 
-		$title = 'Edit Category';
+		$title = '카테고리 수정';
 
 		return ['template' => 'editcategory.html.php',
 				'title' => $title,
@@ -35,7 +35,7 @@ class Category {
 	public function list() {
 		$categories = $this->categoriesTable->findAll();
 
-		$title = 'Joke Categories';
+		$title = '카테고리 목록';
 
 		return ['template' => 'categories.html.php', 
 			'title' => $title, 
