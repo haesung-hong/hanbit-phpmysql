@@ -1,2 +1,2 @@
-<h2>Access Denied</h2>
-<p>You do not have permission to view this page.</p>
+<h2>접근 불가</h2>
+<p>이 페이지를 볼 수 있는 권한이 없습니다.</p>
