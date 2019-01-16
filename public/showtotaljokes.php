@@ -1,9 +1,7 @@
 <?php
-//Include the file which creates the $pdo variable and connects to the database
+// $pdo 변수를 생성하고 데이터베이스로 접속하는 인클루드 파일
 include_once __DIR__ . '/../includes/DatabaseConnection.php';
-
-//Include the file which provides the `totalJokes` function
+// totalJokes() 함수가 선언된 인클루드 파일
 include_once __DIR__ . '/../includes/DatabaseFunctions.php';
-
-//Call the function
+// 함수 호출
 echo totalJokes($pdo);
