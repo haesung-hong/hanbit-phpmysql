@@ -9,7 +9,7 @@ class Login {
 	}
 
 	public function loginForm() {
-		return ['template' => 'login.html.php', 'title' => 'Log In'];
+		return ['template' => 'login.html.php', 'title' => '로그인'];
 	}
 
 	public function processLogin() {
@@ -18,19 +18,19 @@ class Login {
 		}
 		else {
 			return ['template' => 'login.html.php',
-					'title' => 'Log In',
+					'title' => '로그인',
 					'variables' => [
-							'error' => 'Invalid username/password.'
+							'error' => '사용자 이름/비밀번호가 유효하지 않습니다.'
 						]
 					];
 		}
 	}
 
 	public function success() {
-		return ['template' => 'loginsuccess.html.php', 'title' => 'Login Successful'];
+		return ['template' => 'loginsuccess.html.php', 'title' => '로그인 성공'];
 	}
 
 	public function error() {
-		return ['template' => 'loginerror.html.php', 'title' => 'You are not logged in'];
+		return ['template' => 'loginerror.html.php', 'title' => '로그인되지 않았습니다.'];
 	}
 }
