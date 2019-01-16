@@ -1,24 +1,24 @@
 <?php
 
-$english = [
-  1 => 'one',
-  2 => 'two',
-  3 => 'three',
-  4 => 'four',
-  5 => 'five',
-  6 => 'six'
+$korean = [
+    1 => '하나',
+    2 => '둘',
+    3 => '셋',
+    4 => '넷',
+    5 => '다섯',
+    6 => '여섯'
 ];
 
 $roll = rand(1, 6);
 
-echo '<p>You rolled a ' . $english[$roll] . '</p>';
+echo '<p>주사위를 굴려서 나온 숫자 : ' . $korean[$roll] . '</p>';
 
 
 if ($roll == 6) {
-  echo '<p>You win!</p>';
+  echo '<p>이겼다!</p>';
 }
 else {
-  echo '<p>Sorry, you didn\'t win, better luck next time!</p>';
+  echo '<p>아쉽지만 \'꽝\'이네요. 다음 기회를 노려보세요!</p>';
 }
 
 ?>
