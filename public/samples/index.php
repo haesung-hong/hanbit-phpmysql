@@ -80,7 +80,7 @@ if (!isset($branchName)) {
 ?><!doctype html>
 <html>
 	<head>
-	<title><?= $branchName; ?> - PHP 초보에서 고수로 sample code</title>
+	<title><?= $branchName; ?> - PHP & MySQL 닌자 비법서 Sample Code</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style>
 	a {text-decoration: none}
@@ -106,7 +106,7 @@ if (!isset($branchName)) {
 
 
 
-	<h1>PHP 초보에서 고수로 sample code</h1>
+	<h1>PHP & MySQL 닌자 비법서 Sample Code</h1>
 
 	<p>파일명을 클릭하면 실행 결과를 브라우저에서 볼 수 있습니다.</p>
 
