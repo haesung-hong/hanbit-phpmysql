@@ -16,11 +16,11 @@ function totalJokes($pdo) {
 
 
 function getJoke($pdo, $id) {
-	//Create the array of `$parameters` for use in the `query` function
+	// query() 함수에서 사용할 $parameters 배열 생성
 	$parameters = [':id' => $id];
 
 
-	//call the query function and provide the `$parameters` array
+	// query() 함수에서 사용할 $parameters 배열 제공
 	$query = query($pdo, 'SELECT * FROM `joke` WHERE `id` = :id', $parameters);
 
 	return $query->fetch();
