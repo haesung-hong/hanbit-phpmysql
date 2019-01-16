@@ -19,7 +19,7 @@ class Joke {
 	public function list() {
 		$jokes = $this->jokesTable->findAll();
 
-		$title = '유머글 목록';
+		$title = '유머 글 목록';
 
 		$totalJokes = $this->jokesTable->total();
 
@@ -76,7 +76,7 @@ class Joke {
 			$joke = $this->jokesTable->findById($_GET['id']);
 		}
 
-		$title = 'Edit joke';
+		$title = '유머 글 수정';
 
 		return ['template' => 'editjoke.html.php',
 				'title' => $title,
