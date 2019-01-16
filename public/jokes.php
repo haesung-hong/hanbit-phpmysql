@@ -22,7 +22,7 @@ try {
 	}
 
 
-	$title = '유머글 목록';
+	$title = '유머 글 목록';
 
 	$totalJokes = total($pdo, 'joke');
 
