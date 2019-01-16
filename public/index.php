@@ -16,7 +16,8 @@ try {
 	$authorsTable = new DatabaseTable($pdo, 'author', 'id');
 
 
-	$route = $_GET['route'] ?? 'joke/home'; //if no route variable is set, use 'joke/home'
+    // route 변수가 설정되지 않으면 ‘joke/home’을 지정
+	$route = $_GET['route'] ?? 'joke/home';
 
 	if ($route == strtolower($route)) {
 
