@@ -1,4 +1,4 @@
-<h2>Edit <?=$author->name?>'s Permissions</h2>
+<h2><?=$author->name?>권한 수정</h2>
 
 <form action="" method="post">
 	
@@ -9,5 +9,5 @@
 	</div>
 	<?php endforeach; ?>
 
-	<input type="submit" value="Submit" />
+	<input type="submit" value="저장" />
 </form>
