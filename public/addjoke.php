@@ -18,7 +18,7 @@ if (isset($_POST['joketext'])) {
 
 }
 else {
-  $title = '유머글 등록';
+  $title = '유머 글 등록';
 
   ob_start();
 
