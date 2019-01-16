@@ -11,13 +11,13 @@ class Register {
 
 	public function registrationForm() {
 		return ['template' => 'register.html.php', 
-				'title' => 'Register an account'];
+				'title' => '사용자 등록'];
 	}
 
 
 	public function success() {
 		return ['template' => 'registersuccess.html.php', 
-			'title' => 'Registration Successful'];
+			'title' => '등록 성공'];
 	}
 
 	public function registerUser() {
