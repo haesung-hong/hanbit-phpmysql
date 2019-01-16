@@ -68,7 +68,7 @@ function update($pdo, $table, $primaryKey, $fields) {
 
 	$query .= ' WHERE `' . $primaryKey . '` = :primaryKey';
 
-	//Set the :primaryKey variable
+	// :primaryKey 변수 설정
 	$fields['primaryKey'] = $fields['id'];
 
 	$fields = processDates($fields);
@@ -94,7 +94,7 @@ function findAll($pdo, $table) {
 function processDates($fields) {
 	foreach ($fields as $key => $value) {
 		if ($value instanceof DateTime) {
-			$fields[$key] = $value->format('Y-m-d');
+			$fields[$key] = $value->format('Y-m-d H:i:s');
 		}
 	}
 
