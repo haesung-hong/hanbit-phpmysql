@@ -61,7 +61,7 @@ CREATE TABLE `category` (
 
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (1,'Programming Jokes'),(2,'One Liners');
+INSERT INTO `category` VALUES (1,'프로그래밍'),(2,'Q&A');
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `joke` (
 
 LOCK TABLES `joke` WRITE;
 /*!40000 ALTER TABLE `joke` DISABLE KEYS */;
-INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2017-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2017-04-01',1),(3,'Why was the empty array stuck outside? It didn\'t have any keys','2017-04-01',2),(20,'How do functions break up? They stop calling each other','2017-08-09',2),(21,'How do you tell HTML from HTML5? Try it out in Internet Explorer. Did it work? No? It\'s HTML5','2017-08-09',2),(22,'You don\'t need any training to be a litter picker, you pick it up as you go','2017-08-09',2);
+INSERT INTO `joke` VALUES (1,'Q: 전구 하나를 갈려면 몇 명의 프로그래머가 필요한가? A: 필요 없음. 그건 하드웨어 문제니까.','2017-04-01',1),(2,'프로그램은 내가 원하는대로 움직이지 않는다. 타이핑대로 움직인다.','2017-04-01',1),(3,'세상에는 10종류의 사람이 있다. 이진수를 이해하는 사람과 이해 못하는 사람.','2017-04-01',2),(20,'Q: 돌잔치를 영어로 하면? A: 락페스티벌','2017-08-09',2),(21,'프로그래머 남편이 우유를 10개 사왔다. 우유 사면서 계란 있으면 10개 사오라고 했을 뿐인데.','2017-08-09',2),(22,'유럽인은 EU식만 먹는다는게 사실인가요?','2017-08-09',2);
 /*!40000 ALTER TABLE `joke` ENABLE KEYS */;
 UNLOCK TABLES;
 
