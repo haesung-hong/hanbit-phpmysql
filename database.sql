@@ -36,7 +36,7 @@ CREATE TABLE `joke` (
 
 LOCK TABLES `joke` WRITE;
 /*!40000 ALTER TABLE `joke` DISABLE KEYS */;
-INSERT INTO `joke` VALUES (1,'A programmer was found dead in the shower. The instructions read: lather, rinse, repeat.','2012-01-05'),(2,'!false - it\'s funny because it\'s true','2017-01-08');
+INSERT INTO `joke` VALUES (1,'프로그래머가 샤워를 하다가 사망했다. 그가 쓰던 샴푸에는 이런 사용법이 적혀 있었다. 감고, 씻어내고, 반복하세요.','2012-01-05'),(2,'!false는 \'앗! 거짓\'이라는 뜻이 아냐. 그냥 \'참\'이라고!','2017-01-08');
 /*!40000 ALTER TABLE `joke` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
