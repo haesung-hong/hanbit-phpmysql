@@ -1,10 +1,10 @@
 # PHP & MySQL 닌자 비법서
 
-<!--img src="http://www.hanbit.co.kr/data/books/B8310462346_l.jpg"-->
+<img src="http://www.hanbit.co.kr/data/books/B1459383572_l.jpg" width="300">
 
 ## 이 저장소는?
 
-이 곳은 [『PHP & MySQL 닌자 비법서』(한빛미디어, 2019)](http://www.hanbit.co.kr/store/books/)의 예제 코드 저장소입니다. [원서 『PHP & MySQL: Novice to Ninja, 6th Edition』(Sitepoint, 2017)](https://www.sitepoint.com/premium/books/php-mysql-novice-to-ninja-6th-edition)의 예제 코드는 [여기](https://github.com/spbooks/phpmysql6)에 있습니다.
+이 곳은 [『PHP & MySQL 닌자 비법서』(한빛미디어, 2019)](http://www.hanbit.co.kr/media/books/book_view.html?p_code=B1459383572)의 예제 코드 저장소입니다. [원서 『PHP & MySQL: Novice to Ninja, 6th Edition』(Sitepoint, 2017)](https://www.sitepoint.com/premium/books/php-mysql-novice-to-ninja-6th-edition)의 예제 코드는 [여기](https://github.com/spbooks/phpmysql6)에 있습니다.
 
 ## 사용법
 
