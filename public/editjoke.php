@@ -19,7 +19,7 @@ try {
 			$joke = findById($pdo, 'joke', 'id', $_GET['id']);
 		}
 
-		$title = 'Edit joke';
+		$title = '유머 글 수정';
 
 		ob_start();
 
@@ -29,9 +29,9 @@ try {
 	}
 }
 catch (PDOException $e) {
-	$title = 'An error has occurred';
+	$title = '오류가 발생했습니다';
 
-	$output = 'Database error: ' . $e->getMessage() . ' in ' .
+	$output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .
 	$e->getFile() . ':' . $e->getLine();
 }
 
