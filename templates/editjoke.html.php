@@ -1,10 +1,10 @@
 <?php if (empty($joke->id) || $user->id == $joke->authorId || $user->hasPermission(\Ijdb\Entity\Author::EDIT_JOKES)): ?>
 <form action="" method="post">
 	<input type="hidden" name="joke[id]" value="<?=$joke->id ?? ''?>">
-    <label for="joketext">Type your joke here:</label>
+    <label for="joketext">유머 글을 입력해주세요: </label>
     <textarea id="joketext" name="joke[joketext]" rows="3" cols="40"><?=$joke->joketext ?? ''?></textarea>
 
-    <p>Select categories for this joke:</p>
+    <p>유머 카테고리 선택:</p>
     <?php foreach ($categories as $category): ?>
 
     <?php if ($joke && $joke->hasCategory($category->id)): ?>
@@ -16,10 +16,10 @@
     <label><?=$category->name?></label>
     <?php endforeach; ?>
 
-    <input type="submit" name="submit" value="Save">
+    <input type="submit" name="submit" value="저장">
 </form>
 <?php else: ?>
 
-<p>You may only edit jokes that you posted.</p>
+<p>자신이 작성한 글만 수정할 수 있습니다..</p>
 
 <?php endif; ?>
