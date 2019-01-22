@@ -1,3 +1,3 @@
-<h2>Logged out</h2>
+<h2>로그아웃</h2>
 
-<p>You have been logged out</p>
+<p>로그아웃되었습니다.</p>
