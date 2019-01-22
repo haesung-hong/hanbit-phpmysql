@@ -1,7 +1,7 @@
 <?php
 namespace Ijdb;
 
-class IjdbRoutes implements \Ninja\Routes {
+class IjdbRoutes implements \Hanbit\Routes {
 	private $authorsTable;
 	private $jokesTable;
 	private $authentication;
@@ -9,9 +9,9 @@ class IjdbRoutes implements \Ninja\Routes {
 	public function __construct() {
 		include __DIR__ . '/../../includes/DatabaseConnection.php';
 
-		$this->jokesTable = new \Ninja\DatabaseTable($pdo, 'joke', 'id');
-		$this->authorsTable = new \Ninja\DatabaseTable($pdo, 'author', 'id');
-		$this->authentication = new \Ninja\Authentication($this->authorsTable, 'email', 'password');
+		$this->jokesTable = new \Hanbit\DatabaseTable($pdo, 'joke', 'id');
+		$this->authorsTable = new \Hanbit\DatabaseTable($pdo, 'author', 'id');
+		$this->authentication = new \Hanbit\Authentication($this->authorsTable, 'email', 'password');
 	}
 
 	public function getRoutes(): array {
@@ -78,7 +78,7 @@ class IjdbRoutes implements \Ninja\Routes {
 		return $routes;
 	}
 
-	public function getAuthentication(): \Ninja\Authentication {
+	public function getAuthentication(): \Hanbit\Authentication {
 		return $this->authentication;
 	}
 
