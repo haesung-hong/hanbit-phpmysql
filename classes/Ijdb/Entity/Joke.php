@@ -8,7 +8,7 @@ class Joke {
 	public $joketext;
 	private $authorsTable;
 
-	public function __construct(\Ninja\DatabaseTable $authorsTable) {
+	public function __construct(\Hanbit\DatabaseTable $authorsTable) {
 		$this->authorsTable = $authorsTable;
 	}
 
