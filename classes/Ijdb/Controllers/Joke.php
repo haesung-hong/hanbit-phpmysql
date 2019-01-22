@@ -1,6 +1,6 @@
 <?php
 namespace Ijdb\Controllers;
-use \Ninja\DatabaseTable;
+use \Hanbit\DatabaseTable;
 
 class Joke {
 	private $authorsTable;
@@ -29,9 +29,10 @@ class Joke {
 		}
 
 
-		$title = '유머글 목';
+		$title = '유머 글 목록';
 
 		$totalJokes = $this->jokesTable->total();
+
 
 		return ['template' => 'jokes.html.php', 
 				'title' => $title, 
@@ -43,7 +44,7 @@ class Joke {
 	}
 
 	public function home() {
-		$title = '인터넷 유머 데이터베이스';
+		$title = '인터넷 유머 세상';
 
 		return ['template' => 'home.html.php', 'title' => $title];
 	}
@@ -73,7 +74,7 @@ class Joke {
 				$joke = $this->jokesTable->findById($_GET['id']);
 			}
 
-			$title = '유머글 수정';
+			$title = '유머 글 수정';
 
 			return ['template' => 'editjoke.html.php',
 					'title' => $title,
