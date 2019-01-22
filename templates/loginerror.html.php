@@ -1,3 +1,3 @@
-<h2>You are not logged in</h2>
+<h2>로그인되지 않았습니다</h2>
 
-	<p>You must be logged in to view this page. <a href="/login">Click here to log in</a> or <a href="/author/register">Click here to register an account</a></p>
+	<p>이 페이지를 보려면 로그인해야 합니다. <a href="/login">로그인하려면 클릭하세요</a> 또는 <a href="/author/register">회원가입하려면 클릭하세요</a></p>
