@@ -9,7 +9,7 @@ class Joke {
 	private $authorsTable;
 	private $author;
 
-	public function __construct(\Ninja\DatabaseTable $authorsTable) {
+	public function __construct(\Hanbit\DatabaseTable $authorsTable) {
 		$this->authorsTable = $authorsTable;
 	}
 
