@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Counting to Ten</title>
+    <title>10까지 숫자 세기</title>
   </head>
   <body>
     <p>
