@@ -1,10 +1,10 @@
-<h2>User List</h2>
+<h2>사용자 목록</h2>
 
 <table>
 	<thead>
-		<th>Name</th>
-		<th>Email</th>
-		<th>Edit</th>
+		<th>이름</th>
+		<th>이메일</th>
+		<th>수정</th>
 	</thead>
 
 	<tbody>
@@ -12,7 +12,7 @@
 		<tr>
 			<td><?=$author->name;?></td>		
 			<td><?=$author->email;?></td>
-			<td><a href="/author/permissions?id=<?=$author->id;?>">Edit Permissions</a></td>
+			<td><a href="/author/permissions?id=<?=$author->id;?>">권한 수정</a></td>
 		</tr>
 		<?php endforeach; ?>
 	</tbody>
