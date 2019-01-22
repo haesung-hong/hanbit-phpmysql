@@ -11,7 +11,7 @@ try {
   $jokes = $pdo->query($sql);
 
 
-  $title = '유머글 목록';
+  $title = '유머 글 목록';
 
   ob_start();
 
@@ -21,9 +21,10 @@ try {
 
 }
 catch (PDOException $e) {
-    $title = '오류가 발생했습니다.';
+  $title = '오류가 발생했습니다';
 
-    $output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .$e->getFile() . ':' . $e->getLine();
+  $output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .
+  $e->getFile() . ':' . $e->getLine();
 }
 
 include  __DIR__ . '/../templates/layout.html.php';
