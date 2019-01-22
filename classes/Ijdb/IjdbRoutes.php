@@ -5,8 +5,8 @@ class IjdbRoutes {
 	public function getRoutes() {
 		include __DIR__ . '/../../includes/DatabaseConnection.php';
 
-		$jokesTable = new \Ninja\DatabaseTable($pdo, 'joke', 'id');
-		$authorsTable = new \Ninja\DatabaseTable($pdo, 'author', 'id');
+		$jokesTable = new \Hanbit\DatabaseTable($pdo, 'joke', 'id');
+		$authorsTable = new \Hanbit\DatabaseTable($pdo, 'author', 'id');
 
 		$jokeController = new \Ijdb\Controllers\Joke($jokesTable, $authorsTable);
 
