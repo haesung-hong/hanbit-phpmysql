@@ -1,6 +1,6 @@
 <?php
 namespace Ijdb\Controllers;
-use \Ninja\DatabaseTable;
+use \Hanbit\DatabaseTable;
 
 class Register {
 	private $authorsTable;
@@ -11,65 +11,67 @@ class Register {
 
 	public function registrationForm() {
 		return ['template' => 'register.html.php', 
-				'title' => 'Register an account'];
+				'title' => '사용자 등록'];
 	}
 
 
 	public function success() {
 		return ['template' => 'registersuccess.html.php', 
-			    'title' => 'Registration Successful'];
+			    'title' => '등록 성공'];
 	}
 
 	public function registerUser() {
 		$author = $_POST['author'];
 
-		//Assume the data is valid to begin with
+		// 데이터는 처음부터 유효하다고 가정
 		$valid = true;
 		$errors = [];
 
-		//But if any of the fields have been left blank, set $valid to false
+		// 하지만 항목이 빈 값이면 $valid에 false 할당
 		if (empty($author['name'])) {
 			$valid = false;
-			$errors[] = 'Name cannot be blank';
+			$errors[] = '이름을 입력해야 합니다.';
 		}
 
 		if (empty($author['email'])) {
 			$valid = false;
-			$errors[] = 'Email cannot be blank';
+			$errors[] = '이메일을 입력해야 합니다.';
 		}
 		else if (filter_var($author['email'], FILTER_VALIDATE_EMAIL) == false) {
 			$valid = false;
-			$errors[] = 'Invalid email address';
+			$errors[] = '유효하지 않은 이메일 주소입니다.';
 		}
-		else { //if the email is not blank and valid:
-			//convert the email to lowercase
+		else { // 이메일 주소가 빈 값이 아니고 유효하다면
+			// 이메일 주소를 소문자로 변환
 			$author['email'] = strtolower($author['email']);
 
-			//search for the lowercase version of `$author['email']`
+			// $author['email']을 소문자로 검색
 			if (count($this->authorsTable->find('email', $author['email'])) > 0) {
 				$valid = false;
-				$errors[] = 'That email address is already registered';
+				$errors[] = '이미 가입된 이메일 주소입니다.';
 			}
 		}
 
 
 		if (empty($author['password'])) {
 			$valid = false;
-			$errors[] = 'Password cannot be blank';
+			$errors[] = '비밀번호를 입력해야 합니다.';
 		}
 
-		//If $valid is still true, no fields were blank and the data can be added
+		// $valid가 true라면 빈 항목이 없으므로
+		// 데이터를 추가할 수 있음
 		if ($valid == true) {
 
-			//When submitted, the $author variable now contains a lowercase value for email
+			// 폼이 전송되면 $author 변수는
+            // 소문자 메일과 비밀번호 해시값을 포함
 			$this->authorsTable->save($author);
 
 			header('Location: /author/success');
 		}
 		else {
-			//If the data is not valid, show the form again
+			// 데이터가 유효하지 않으면 폼을 다시 출력
 			return ['template' => 'register.html.php', 
-				    'title' => 'Register an account',
+				    'title' => '사용자 등록',
 				    'variables' => [
 				    	'errors' => $errors,
 				    	'author' => $author
