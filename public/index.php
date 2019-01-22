@@ -12,10 +12,10 @@ try {
 
   $pdo->exec($sql);
 
-  $output = 'Joke table successfully created.';
+  $output = 'joke 테이블 생성 완료.';
 }
 catch (PDOException $e) {
-  $output = 'Database error: ' . $e->getMessage() . ' in ' .
+  $output = '데이터베이스 오류: ' . $e->getMessage() . ', 위치: ' .
   $e->getFile() . ':' . $e->getLine();
 }
 
