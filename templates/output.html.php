@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Script Output</title>
+    <title>출력 내용</title>
   </head>
   <body>
       <?php echo $output; ?>
