@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Random Number</title>
+    <title>무작위 숫자</title>
   </head>
   <body>
-    <p>Generating a random number between 1 and 10: 
+    <p>1에서 10까지 무작위 숫자 생성하기: 
       <?php
 
       echo rand(1, 10);
